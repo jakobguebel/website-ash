@@ -1,0 +1,115 @@
+ash-kurpfalz-umzuege/
+│
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   ├── manifest.json
+│   └── assets/
+│       ├── images/
+│       │   ├── logo.svg
+│       │   ├── hero-background.jpg
+│       │   └── service-images/
+│       │       ├── private-moving.jpg
+│       │       ├── office-moving.jpg
+│       │       └── senior-moving.jpg
+│       └── data/
+│           └── calculator-data.json
+│
+├── src/
+│   ├── App.js
+│   ├── index.js
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
+│   │
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Button.js
+│   │   │   ├── Container.js
+│   │   │   ├── Footer.js
+│   │   │   ├── Header.js
+│   │   │   ├── Logo.js
+│   │   │   ├── Navigation.js
+│   │   │   ├── SectionTitle.js
+│   │   │   └── CookieBanner.js
+│   │   │
+│   │   ├── home/
+│   │   │   ├── Hero.js
+│   │   │   ├── ServiceCard.js
+│   │   │   ├── Services.js
+│   │   │   └── CalculatorCTA.js
+│   │   │
+│   │   ├── services/
+│   │   │   ├── ServiceDetail.js
+│   │   │   └── ServiceGallery.js
+│   │   │
+│   │   ├── calculator/
+│   │   │   ├── Calculator.js
+│   │   │   ├── CalculatorForm.js
+│   │   │   ├── CalculatorResults.js
+│   │   │   └── CalculatorStep.js
+│   │   │
+│   │   ├── about/
+│   │   │   ├── AboutUs.js
+│   │   │   ├── Team.js
+│   │   │   └── TeamMember.js
+│   │   │
+│   │   ├── testimonials/
+│   │   │   ├── Testimonials.js
+│   │   │   └── TestimonialCard.js
+│   │   │
+│   │   ├── contact/
+│   │   │   ├── ContactForm.js
+│   │   │   ├── ContactInfo.js
+│   │   │   └── Map.js
+│   │   │
+│   │   └── legal/
+│   │       ├── Impressum.js
+│   │       ├── PrivacyPolicy.js
+│   │       └── Terms.js
+│   │
+│   ├── pages/
+│   │   ├── HomePage.js
+│   │   ├── ServicesPage.js
+│   │   ├── CalculatorPage.js
+│   │   ├── AboutPage.js
+│   │   ├── TestimonialsPage.js
+│   │   ├── ContactPage.js
+│   │   ├── ImpressumPage.js
+│   │   ├── PrivacyPolicyPage.js
+│   │   └── TermsPage.js
+│   │
+│   ├── hooks/
+│   │   ├── useCalculator.js
+│   │   └── useForm.js
+│   │
+│   ├── context/
+│   │   └── CalculatorContext.js
+│   │
+│   ├── utils/
+│   │   ├── calculatorUtils.js
+│   │   ├── formUtils.js
+│   │   └── apiUtils.js
+│   │
+│   ├── services/
+│   │   └── api.js
+│   │
+│   ├── styles/
+│   │   ├── global.css
+│   │   ├── variables.css
+│   │   └── components/
+│   │       ├── Button.css
+│   │       ├── Calculator.css
+│   │       └── ...
+│   │
+│   └── assets/
+│       ├── icons/
+│       │   └── ...
+│       └── fonts/
+│           └── ...
+│
+├── package.json
+├── package-lock.json
+├── .gitignore
+├── .env
+├── README.md
+└── tailwind.config.js  // Optional, if using Tailwind CSS
