@@ -40,7 +40,7 @@ img {
 
 /* Section Styles */
 .section {
-  padding: 60px 0;
+  padding: 40px 0; /* Reduziert von 60px 0 */
   position: relative;
 }
 
@@ -48,34 +48,34 @@ img {
   background-color: var(--bg-section);
   border-radius: 10px;
   box-shadow: var(--shadow-sm);
-  margin: 30px 0;
+  margin: 25px 0; /* Reduziert von 30px 0 */
 }
 
 .section-dark {
   background-color: var(--dark);
   color: white;
   border-radius: 10px;
-  margin: 30px 0;
+  margin: 25px 0; /* Reduziert von 30px 0 */
 }
 
 .section-primary {
   background-color: var(--primary);
   color: var(--dark);
   border-radius: 10px;
-  margin: 30px 0;
+  margin: 25px 0; /* Reduziert von 30px 0 */
 }
 
 .section-secondary {
   background-color: var(--secondary);
   color: white;
   border-radius: 10px;
-  margin: 30px 0;
+  margin: 25px 0; /* Reduziert von 30px 0 */
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem; /* Reduziert von 1rem */
   font-weight: 600;
 }
 
@@ -111,13 +111,13 @@ a {
 /* Section Titles */
 .section-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 35px; /* Reduziert von 50px */
 }
 
 .section-title h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem; /* Reduziert von 2.5rem */
   color: var(--secondary);
-  margin-bottom: 15px;
+  margin-bottom: 12px; /* Reduziert von 15px */
   position: relative;
   display: inline-block;
 }
@@ -137,13 +137,13 @@ a {
   max-width: 600px;
   margin: 0 auto;
   color: var(--text-muted);
-  font-size: 1.1rem;
+  font-size: 1.05rem; /* Reduziert von 1.1rem */
 }
 
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 10px 22px; /* Reduziert von 12px 25px */
   border-radius: 30px;
   font-weight: 500;
   text-decoration: none;
@@ -191,8 +191,8 @@ a {
 }
 
 .btn-lg {
-  padding: 14px 30px;
-  font-size: 1.1rem;
+  padding: 12px 25px; /* Reduziert von 14px 30px */
+  font-size: 1.05rem; /* Reduziert von 1.1rem */
 }
 
 .btn-sm {
@@ -207,8 +207,8 @@ a {
 
 /* Section Divider */
 .section-divider {
-  height: 50px;
-  margin: 20px 0;
+  height: 40px; /* Reduziert von 50px */
+  margin: 15px 0; /* Reduziert von 20px 0 */
   position: relative;
   text-align: center;
 }
@@ -262,17 +262,17 @@ a {
   background-color: var(--light);
 }
 
-.mb-1 { margin-bottom: 0.5rem; }
-.mb-2 { margin-bottom: 1rem; }
-.mb-3 { margin-bottom: 1.5rem; }
-.mb-4 { margin-bottom: 2rem; }
-.mb-5 { margin-bottom: 3rem; }
+.mb-1 { margin-bottom: 0.4rem; } /* Reduziert von 0.5rem */
+.mb-2 { margin-bottom: 0.8rem; } /* Reduziert von 1rem */
+.mb-3 { margin-bottom: 1.2rem; } /* Reduziert von 1.5rem */
+.mb-4 { margin-bottom: 1.6rem; } /* Reduziert von 2rem */
+.mb-5 { margin-bottom: 2.4rem; } /* Reduziert von 3rem */
 
-.mt-1 { margin-top: 0.5rem; }
-.mt-2 { margin-top: 1rem; }
-.mt-3 { margin-top: 1.5rem; }
-.mt-4 { margin-top: 2rem; }
-.mt-5 { margin-top: 3rem; }
+.mt-1 { margin-top: 0.4rem; } /* Reduziert von 0.5rem */
+.mt-2 { margin-top: 0.8rem; } /* Reduziert von 1rem */
+.mt-3 { margin-top: 1.2rem; } /* Reduziert von 1.5rem */
+.mt-4 { margin-top: 1.6rem; } /* Reduziert von 2rem */
+.mt-5 { margin-top: 2.4rem; } /* Reduziert von 3rem */
 
 .p-1 { padding: 0.5rem; }
 .p-2 { padding: 1rem; }
@@ -287,7 +287,7 @@ a {
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 20px;
+  margin-bottom: 16px; /* Reduziert von 20px */
 }
 
 .card:hover {
@@ -296,7 +296,7 @@ a {
 }
 
 .card-body {
-  padding: 1.5rem;
+  padding: 1.2rem; /* Reduziert von 1.5rem */
 }
 
 .card-title {

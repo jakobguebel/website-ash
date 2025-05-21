@@ -1,9 +1,10 @@
 /* src/pages/HomePage.css */
 
-/* Hero Section */
+/* Hero Section - kompaktere Darstellung */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/public/images/hero-background.jpg') center/cover no-repeat;
-  height: 90vh; /* Increased height to avoid obstruction by header */
+  height: 75vh; /* Reduziert von 90vh */
+  min-height: 480px; /* Minimalhöhe für kleinere Bildschirme */
   display: flex;
   align-items: center;
   color: white;
@@ -12,51 +13,51 @@
 
 .hero-content {
   max-width: 600px;
-  padding-top: 60px; /* Added padding to push content down and avoid header obstruction */
+  padding-top: 40px; /* Reduziert von 60px */
 }
 
 .experience-badge {
   display: inline-block;
   background-color: var(--primary);
   color: var(--dark);
-  padding: 10px 20px;
+  padding: 8px 16px; /* Reduziert von 10px 20px */
   border-radius: 30px;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin-bottom: 20px; /* Reduziert von 25px */
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   position: relative;
   z-index: 2;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2.6rem; /* Reduziert von 3rem */
+  margin-bottom: 15px; /* Reduziert von 20px */
   font-weight: 700;
   letter-spacing: -0.5px;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+  font-size: 1.1rem; /* Reduziert von 1.2rem */
+  margin-bottom: 20px; /* Reduziert von 30px */
   opacity: 0.9;
-  line-height: 1.7;
+  line-height: 1.6; /* Reduziert von 1.7 */
 }
 
 .hero-buttons {
   display: flex;
-  gap: 20px;
+  gap: 15px; /* Reduziert von 20px */
 }
 
 .hero-buttons .btn {
-  min-width: 180px;
+  min-width: 160px; /* Reduziert von 180px */
   text-align: center;
   font-weight: 500;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* Services Preview */
+/* Services Preview - kompaktere Darstellung */
 .services-preview {
-  padding: 80px 0;
+  padding: 50px 0; /* Reduziert von 80px 0 */
   background-color: var(--bg-section);
   border-radius: 10px;
   margin-top: -50px;
@@ -67,8 +68,8 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Schmalere Karten */
+  gap: 20px; /* Reduziert von 30px */
 }
 
 .service-card {
@@ -78,15 +79,18 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(0,0,0,0.05);
+  height: 100%; /* Gleiche Höhe für alle Karten */
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transform: translateY(-7px); /* Etwas weniger als vorher */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
 }
 
 .service-img {
-  height: 200px;
+  height: 160px; /* Reduziert von 200px */
   background-color: #f5f7fa;
   display: flex;
   justify-content: center;
@@ -97,127 +101,140 @@
 }
 
 .placeholder-img {
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* Reduziert von 1.5rem */
   position: relative;
 }
 
 .placeholder-img::before {
   content: '📦';
-  font-size: 2.5rem;
+  font-size: 2.2rem; /* Reduziert von 2.5rem */
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px; /* Reduziert von 10px */
 }
 
 .service-content {
-  padding: 25px;
+  padding: 18px; /* Reduziert von 25px */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Nimmt verfügbaren Platz ein */
 }
 
 .service-content h3 {
   color: var(--secondary);
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px; /* Reduziert von 15px */
   font-weight: 600;
+  font-size: 1.3rem; /* Kleinere Überschrift */
 }
 
 .service-content p {
-  margin-bottom: 25px;
+  margin-bottom: 18px; /* Reduziert von 25px */
   color: var(--text-muted);
-  line-height: 1.7;
+  line-height: 1.5; /* Reduziert von 1.7 */
+  font-size: 0.95rem; /* Etwas kleinere Schrift */
+  flex-grow: 1; /* Nimmt verfügbaren Platz ein */
 }
 
 .service-content .btn {
   width: 100%;
   display: block;
+  margin-top: auto; /* Drückt den Button ans Ende */
 }
 
-/* Calculator CTA */
+/* Calculator CTA - kompaktere Darstellung */
 .calculator-cta {
   text-align: center;
-  margin: 60px 0;
-  padding: 60px 0;
+  margin: 40px 0; /* Reduziert von 60px 0 */
+  padding: 40px 0; /* Reduziert von 60px 0 */
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .calculator-cta h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2.2rem; /* Reduziert von 2.5rem */
+  margin-bottom: 15px; /* Reduziert von 20px */
   color: white;
   font-weight: 700;
 }
 
 .calculator-cta p {
   max-width: 700px;
-  margin: 0 auto 30px;
-  font-size: 1.1rem;
+  margin: 0 auto 20px; /* Reduziert von 0 auto 30px */
+  font-size: 1.05rem; /* Reduziert von 1.1rem */
   opacity: 0.9;
 }
 
 .calculator-cta .btn {
-  min-width: 220px;
-  padding: 15px 30px;
-  font-size: 1.1rem;
+  min-width: 200px; /* Reduziert von 220px */
+  padding: 12px 25px; /* Reduziert von 15px 30px */
+  font-size: 1.05rem; /* Reduziert von 1.1rem */
   box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
-/* Testimonials */
+/* Testimonials - kompaktere Darstellung */
 .testimonials-preview {
-  padding: 80px 0;
+  padding: 50px 0; /* Reduziert von 80px 0 */
   background-color: var(--bg-section);
   border-radius: 10px;
   box-shadow: 0 5px 30px rgba(0,0,0,0.1);
-  margin: 60px 0;
+  margin: 40px 0; /* Reduziert von 60px 0 */
 }
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-bottom: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Etwas schmalere Karten */
+  gap: 20px; /* Reduziert von 30px */
+  margin-bottom: 30px; /* Reduziert von 40px */
 }
 
 .testimonial-card {
   background-color: white;
   border-radius: 10px;
-  padding: 30px;
+  padding: 22px; /* Reduziert von 30px */
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   position: relative;
   border: 1px solid rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Gleiche Höhe für alle Karten */
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transform: translateY(-4px); /* Etwas weniger als vorher (-5px) */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
 }
 
 .testimonial-card::before {
   content: '"';
   position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 60px;
+  top: 15px; /* Reduziert von 20px */
+  left: 15px; /* Reduziert von 20px */
+  font-size: 45px; /* Reduziert von 60px */
   color: rgba(4, 116, 172, 0.1);
   font-family: Georgia, serif;
 }
 
 .testimonial-content {
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduziert von 20px */
   font-style: italic;
-  line-height: 1.7;
+  line-height: 1.5; /* Reduziert von 1.7 */
   color: var(--text-muted);
   position: relative;
   z-index: 2;
+  font-size: 0.95rem; /* Etwas kleinere Schrift */
+  flex-grow: 1; /* Nimmt verfügbaren Platz ein */
 }
 
 .testimonial-author {
   display: flex;
   align-items: center;
+  margin-top: auto; /* Drückt den Autor ans Ende */
 }
 
 .testimonial-avatar {
-  width: 50px;
-  height: 50px;
+  width: 42px; /* Reduziert von 50px */
+  height: 42px; /* Reduziert von 50px */
   border-radius: 50%;
   background-color: var(--secondary);
   color: white;
@@ -225,103 +242,63 @@
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  margin-right: 15px;
+  margin-right: 12px; /* Reduziert von 15px */
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  font-size: 0.9rem; /* Kleinere Schrift */
 }
 
 .testimonial-info h4 {
   margin: 0;
   color: var(--secondary);
   font-weight: 600;
+  font-size: 1rem; /* Kleinere Überschrift */
 }
 
 .testimonial-info p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* Reduziert von 0.9rem */
   color: var(--text-muted);
 }
 
 .rating {
   color: var(--primary);
-  margin-top: 5px;
+  margin-top: 4px; /* Reduziert von 5px */
   letter-spacing: 2px;
+  font-size: 0.9rem; /* Kleinere Sterne */
 }
 
-/* Section separators */
+/* Section separators - kompakter */
 .section-separator {
-  height: 50px;
+  height: 40px; /* Reduziert von 50px */
   position: relative;
 }
 
-/* Responsive Styles */
+/* Responsive Styles - angepasst */
 @media (max-width: 768px) {
   .hero {
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px 20px; /* Reduziert von 40px 20px */
     height: auto;
-    min-height: 80vh;
+    min-height: 70vh; /* Reduziert von 80vh */
   }
   
   .hero-content {
-    margin: 60px auto 0;
-    padding-top: 40px;
+    margin: 50px auto 0; /* Reduziert von 60px auto 0 */
+    padding-top: 30px; /* Reduziert von 40px */
   }
   
   .hero h1 {
-    font-size: 2.2rem;
-  }
-  
-  .hero-buttons {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-  
-  .hero-buttons .btn {
-    width: 100%;
-    max-width: 300px;
-  }
-  
-  .services-grid,
-  .testimonials-grid {
-    grid-template-columns: 1fr;
+    font-size: 2rem; /* Reduziert von 2.2rem */
   }
   
   .services-preview,
   .testimonials-preview {
     margin-top: 0;
-    padding: 60px 0;
+    padding: 40px 0; /* Reduziert von 60px 0 */
   }
   
   .calculator-cta {
-    margin: 40px 0;
-    padding: 40px 20px;
-  }
-  
-  .calculator-cta h2 {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    padding: 30px 15px;
-  }
-  
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-  
-  .experience-badge {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-  }
-  
-  .service-card {
-    margin: 0 10px;
-  }
-  
-  .calculator-cta h2 {
-    font-size: 1.6rem;
+    margin: 30px 0; /* Reduziert von 40px 0 */
+    padding: 30px 20px; /* Reduziert von 40px 20px */
   }
 }

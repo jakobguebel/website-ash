@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './components/common/MainLayout';
+import ScrollToTop from './components/common/ScrollToTop'; // Neu hinzugefügt
 
 // Pages - Direct imports statt lazy loading für den Start
 import HomePage from './pages/HomePage';
@@ -28,6 +29,8 @@ import TermsPage from './pages/legal/TermsPage';
 function App() {
   return (
     <Router>
+      {/* ScrollToTop-Komponente für zuverlässiges Scrollen zum Seitenanfang */}
+      <ScrollToTop />
       <Routes>
         {/* Main Pages */}
         <Route path="/" element={<MainLayout />}>
